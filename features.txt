@@ -1,0 +1,6 @@
+recommended plugins:
+- Sentry
+- SEO
+- Sitemap
+- Comments
+✅ Documentation 
