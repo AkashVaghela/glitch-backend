@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_shared_recommended_blogs",
+  "info": {
+    "displayName": "recommendedBlogs",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text",
+      "required": true,
+      "maxLength": 60
+    },
+    "recommendedBlogs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog.blog"
+    }
+  }
+}

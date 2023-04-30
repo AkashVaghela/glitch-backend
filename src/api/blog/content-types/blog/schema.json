@@ -15,11 +15,13 @@
     "title": {
       "type": "text",
       "required": true,
-      "unique": false
+      "unique": false,
+      "maxLength": 60
     },
     "description": {
       "type": "text",
-      "required": true
+      "required": true,
+      "maxLength": 155
     },
     "image": {
       "type": "media",
@@ -71,6 +73,23 @@
       "relation": "manyToMany",
       "target": "api::comment.comment",
       "inversedBy": "blogs"
+    },
+    "SEO": {
+      "displayName": "SEO",
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.seo",
+      "required": true
+    },
+    "structuredData": {
+      "type": "json",
+      "required": true
+    },
+    "recommendedBlogs": {
+      "displayName": "recommendedBlogs",
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.recommended-blogs"
     }
   }
 }
